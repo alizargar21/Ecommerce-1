@@ -59,7 +59,6 @@ model ProductCategory {
   parent   ProductCategory?  @relation("Subcategories", fields: [parentId], references: [id])
   parentId String?
   children ProductCategory[] @relation("Subcategories")
-
   products Product[]
 }
 

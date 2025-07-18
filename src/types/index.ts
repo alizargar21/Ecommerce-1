@@ -4,8 +4,16 @@ export type ProductCategory = {
   parentId?: string | null;
   children?: ProductCategory[];
   products?: Product[];
+  parent? : ProductCategory
 };
-
+export type ProductCategoryIncludes = {
+  id: string;
+  name: string;
+  parentId?: string | null;
+  children?: ProductCategory[];
+  products?: Product[];
+  parent? : ProductCategory
+};
 export type Product = {
   id: string;
   name: string;

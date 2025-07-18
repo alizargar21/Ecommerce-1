@@ -1,12 +1,12 @@
-import CategoriesDetailView from '@/modules/categories/views/CategoryDetailView'
-import React from 'react'
+import React from 'react';
+import DashboardCategoriesView from '@/modules/categories/views/DashboardCategoryView';
 
-const page = (params : { id : string}) => {
+const DashboardCategoryPage = () => {
   return (
-     <div>
-      <CategoriesDetailView />
+    <div>
+      <DashboardCategoriesView />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default DashboardCategoryPage;
